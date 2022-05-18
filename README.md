@@ -20,7 +20,7 @@ A solution which can evaluate images and alert the dermatologists about the pres
 ## Model building
 - The entire code is divided into three parts-
 * **Model 1 :** A baseline model which will try to learn from the images present in the dataset.
-* **Model 2 : **To prevent overfitting of the model, dropdouts are added after each convolution+pooling layer
+* **Model 2 :** To prevent overfitting of the model, dropdouts are added after each convolution+pooling layer
 * **Model 3 :** Due to limited number of training images, the model doesn't generalize well. Used the Augmentor library to create transformations of train dataset with each class containing 500 images.
 
 ## Technologies Used
@@ -40,7 +40,6 @@ A solution which can evaluate images and alert the dermatologists about the pres
 ## Acknowledgements
 - The final model is able to learn from the augmented images with an improved accuracy.
 - This project was based on [this tutorial](https://learn.upgrad.com/course/1992/segment/12362/126148/385960/2008503).
-
 
 ## Contact
 Created by [@nehu7] - feel free to contact me!
