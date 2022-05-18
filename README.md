@@ -1,48 +1,49 @@
-# Project Name
-> Outline a brief description of your project.
+# Melanoma Detection
 
+## Introduction
+> Melanoma is a skin cancer disease which is caused by changes in the properties of normal skin cells to become infectious, in which cells will continue to divide into abnormal shapes that are uncontrolled due to DNA damage. It can be deadly if not detected early. It accounts for 75% of skin cancer deaths. The objective is to build a CNN based model which can accurately detect melanoma. A solution which can evaluate images and alert the dermatologists about the presence of melanoma has the potential to reduce a lot of manual effort needed in diagnosis.
+> The following types of skin cancer diseases are present in the dataset : actinic keratosis, basal cell carcinoma, dermatofibroma, melanoma, nevus, pigmented benign keratosis, seborrheic keratosis, squamous cell carcinoma, vascular lesion
 
 ## Table of Contents
 * [General Info](#general-information)
 * [Technologies Used](#technologies-used)
-* [Conclusions](#conclusions)
+* [Model building](#Model-building)
 * [Acknowledgements](#acknowledgements)
 
-<!-- You can include any other section that is pertinent to your problem -->
-
 ## General Information
-- Provide general information about your project here.
-- What is the background of your project?
-- What is the business probem that your project is trying to solve?
-- What is the dataset that is being used?
+- Melanoma is a type of cancer that can be deadly if not detected early. It accounts for 75% of skin cancer deaths.
+A solution which can evaluate images and alert the dermatologists about the presence of melanoma has the potential to reduce a lot of manual effort needed in diagnosis.
+- The dataset consists of 2357 images of malignant and benign oncological diseases, which were formed from the International Skin Imaging Collaboration (ISIC). All images were sorted according to the classification taken with ISIC, and all subsets were divided into the same number of images, with the exception of melanomas and moles, whose images are slightly dominant.
 
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
-## Conclusions
-- Conclusion 1 from the analysis
-- Conclusion 2 from the analysis
-- Conclusion 3 from the analysis
-- Conclusion 4 from the analysis
-
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
-
+## Model building
+- The entire code is divided into three parts-
+* **Model 1 :** A baseline model which will try to learn from the images present in the dataset.
+* **Model 2 : **To prevent overfitting of the model, dropdouts are added after each convolution+pooling layer
+* **Model 3 :** Due to limited number of training images, the model doesn't generalize well. Used the Augmentor library to create transformations of train dataset with each class containing 500 images.
 
 ## Technologies Used
-- library - version 1.0
-- library - version 2.0
-- library - version 3.0
-
-<!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
+- pathlib
+- tensorflow as tf
+- matplotlib.pyplot as plt
+- numpy as np
+- pandas as pd
+- matplotlib.pyplot as plt
+- os
+- PIL
+- PIL.Image
+- from tensorflow keras
+- from tensorflow.keras.layers Rescaling, Conv2D, MaxPooling2D, Dense, Dropout, Flatten, Activation, BatchNormalization, RandomFlip, RandomRotation, RandomZoom
+- from tensorflow.keras.utils image_dataset_from_directory
 
 ## Acknowledgements
-Give credit here.
-- This project was inspired by...
-- References if any...
-- This project was based on [this tutorial](https://www.example.com).
+- The final model is able to learn from the augmented images with an improved accuracy.
+- This project was based on [this tutorial](https://learn.upgrad.com/course/1992/segment/12362/126148/385960/2008503).
 
 
 ## Contact
-Created by [@githubusername] - feel free to contact me!
+Created by [@nehu7] - feel free to contact me!
 
 
 <!-- Optional -->
