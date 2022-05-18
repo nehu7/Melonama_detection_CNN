@@ -2,6 +2,7 @@
 
 ## Introduction
 > Melanoma is a skin cancer disease which is caused by changes in the properties of normal skin cells to become infectious, in which cells will continue to divide into abnormal shapes that are uncontrolled due to DNA damage. It can be deadly if not detected early. It accounts for 75% of skin cancer deaths. The objective is to build a CNN based model which can accurately detect melanoma. A solution which can evaluate images and alert the dermatologists about the presence of melanoma has the potential to reduce a lot of manual effort needed in diagnosis.
+
 > The following types of skin cancer diseases are present in the dataset : actinic keratosis, basal cell carcinoma, dermatofibroma, melanoma, nevus, pigmented benign keratosis, seborrheic keratosis, squamous cell carcinoma, vascular lesion
 
 ## Table of Contents
